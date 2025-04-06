@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Whitepaper – ṢaḥCoin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+<style>
+body { font-family: sans-serif; margin: 0; background: #fff; color: #222; }
+header, footer { background: #202020; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
+nav a:hover { text-decoration: underline; }
+.logo { height: 40px; }
+main { padding: 20px; }
+.btn { background: gold; color: black; border: none; padding: 6px 12px; border-radius: 5px; cursor: pointer; }
+</style>
+<script>
+function switchLang() {
+  const lang = document.body.getAttribute('lang') === 'en' ? 'ar' : 'en';
+  document.body.setAttribute('lang', lang);
+  document.getElementById('main-content').innerHTML = document.getElementById('main-content').getAttribute('data-' + lang);
+  document.getElementById('lang-btn').textContent = lang === 'en' ? 'العربية' : 'English';
+}
+</script>
+
+</head>
+<body lang="en">
+
+<header>
+  <img src="assets/logo.png" class="logo" alt="ṢaḥCoin Logo" />
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="roadmap.html">Roadmap</a>
+    <a href="whitepaper.html">Whitepaper</a>
+    <a href="contact.html">Contact</a>
+    <button class="btn" onclick="switchLang()" id="lang-btn">العربية</button>
+  </nav>
+</header>
+
+<main>
+  <div id="main-content" data-en='<h2>Whitepaper</h2><p><a href='https://infograph.venngage.com/ps/go59C9ha330'>View Official Whitepaper</a></p>' data-ar='<h2>الورقة البيضاء</h2><p><a href='https://infograph.venngage.com/ps/go59C9ha330'>عرض الورقة البيضاء الرسمية</a></p>'>
+    <h2>Whitepaper</h2><p><a href='https://infograph.venngage.com/ps/go59C9ha330'>View Official Whitepaper</a></p>
+  </div>
+</main>
+
+<footer><p>&copy; 2025 ṢaḥCoin. All rights reserved.</p></footer>
+
+</body>
+</html>
